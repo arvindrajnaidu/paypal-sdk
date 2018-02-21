@@ -7,14 +7,14 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-/* eslint-env jest */
-/* eslint-disable padded-blocks, no-unused-expressions */
-
 import React from 'react';
-import renderer from 'react-test-renderer';
-import App from '../App';
-import Layout from './Layout';
+import foo from './foo';
 
-describe('Layout', () => {
-  test('renders children correctly', () => {});
-});
+function action() {
+  return {
+    // title: 'foo',
+    component: <foo />,
+  };
+}
+
+export default action;

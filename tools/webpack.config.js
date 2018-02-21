@@ -296,6 +296,7 @@ const clientConfig = {
 
   entry: {
     client: ['@babel/polyfill', './src/client.js'],
+    sdk: ['@babel/polyfill', './src/sdk/sdk.js'],
   },
 
   plugins: [
@@ -317,10 +318,11 @@ const clientConfig = {
 
     // Move modules that occur in multiple entry chunks to a new entry chunk (the commons chunk).
     // https://webpack.js.org/plugins/commons-chunk-plugin/
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      minChunks: module => /node_modules/.test(module.resource),
-    }),
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   name: 'vendor',
+    //   // minChunks: module => /node_modules/.test(module.resource),
+    //   minChunks: module => false,
+    // }),
 
     ...(isDebug
       ? []
