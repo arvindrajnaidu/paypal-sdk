@@ -1288,6 +1288,12 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
+beaver-logger@^3.0.11:
+  version "3.0.11"
+  resolved "https://npm.paypal.com/repository/npm-all/beaver-logger/-/beaver-logger-3.0.11.tgz#52db6b349e51aeaff07aa00f4144bcc7d224a222"
+  dependencies:
+    zalgo-promise "^1.0.3"
+
 better-assert@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/better-assert/-/better-assert-1.0.2.tgz#40866b9e1b9e0b55b481894311e68faffaebc522"
@@ -2077,6 +2083,18 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     ripemd160 "^2.0.0"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+cross-domain-safe-weakmap@^1.0.1, cross-domain-safe-weakmap@^1.0.19:
+  version "1.0.19"
+  resolved "https://npm.paypal.com/repository/npm-all/cross-domain-safe-weakmap/-/cross-domain-safe-weakmap-1.0.19.tgz#b5b903f094b9618ddc6fe0d3507d63c36cf2a4c8"
+  dependencies:
+    cross-domain-utils "^2.0.0"
+
+cross-domain-utils@^2.0.0, cross-domain-utils@^2.0.3:
+  version "2.0.3"
+  resolved "https://npm.paypal.com/repository/npm-all/cross-domain-utils/-/cross-domain-utils-2.0.3.tgz#1378d2ab235e83eb1f4760ef3ffe8c0b94529897"
+  dependencies:
+    zalgo-promise "^1.0.11"
 
 cross-spawn@5.1.0, cross-spawn@^5.0.1, cross-spawn@^5.1.0:
   version "5.1.0"
@@ -3801,6 +3819,10 @@ hawk@~6.0.2:
     cryptiles "3.x.x"
     hoek "4.x.x"
     sntp "2.x.x"
+
+hi-base32@^0.1.1:
+  version "0.1.1"
+  resolved "https://npm.paypal.com/repository/npm-all/hi-base32/-/hi-base32-0.1.1.tgz#a30fcb56e7362cf5ef6f543e4c280d50647e5e80"
 
 history@^4.7.2:
   version "4.7.2"
@@ -6432,6 +6454,14 @@ portscanner@2.1.1:
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
+
+post-robot@^8.0.14:
+  version "8.0.18"
+  resolved "https://npm.paypal.com/repository/npm-all/post-robot/-/post-robot-8.0.18.tgz#f7f1d160d08172b821a216b6e76ff1be334500f1"
+  dependencies:
+    cross-domain-safe-weakmap "^1.0.1"
+    cross-domain-utils "^2.0.0"
+    zalgo-promise "^1.0.3"
 
 postcss-calc@^5.2.0:
   version "5.3.1"
@@ -9150,6 +9180,17 @@ x-is-string@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/x-is-string/-/x-is-string-0.1.0.tgz#474b50865af3a49a9c4657f05acd145458f77d82"
 
+xcomponent@^6.0.41:
+  version "6.0.41"
+  resolved "https://npm.paypal.com/repository/npm-all/xcomponent/-/xcomponent-6.0.41.tgz#7af274474fda51cc79b81676a01cfae79fb63607"
+  dependencies:
+    beaver-logger "^3.0.11"
+    cross-domain-safe-weakmap "^1.0.19"
+    cross-domain-utils "^2.0.3"
+    hi-base32 "^0.1.1"
+    post-robot "^8.0.14"
+    zalgo-promise "^1.0.22"
+
 xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
@@ -9265,3 +9306,7 @@ yargs@~3.10.0:
 yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
+
+zalgo-promise@^1.0.11, zalgo-promise@^1.0.22, zalgo-promise@^1.0.3:
+  version "1.0.24"
+  resolved "https://npm.paypal.com/repository/npm-all/zalgo-promise/-/zalgo-promise-1.0.24.tgz#e1b6911b12553bc08f20d831669510cafc2a9f51"

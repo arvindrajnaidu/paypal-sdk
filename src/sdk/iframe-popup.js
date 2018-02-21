@@ -1,11 +1,11 @@
-import { buttonComponent } from './x-components'
+import { buttonComponent } from './x-components';
 
-const url = 'http://localhost:5000/sdk/popup.html'
+const url = 'http://localhost:5000/sdk/popup.html';
 
-const xcomp = buttonComponent(url)
+const xcomp = buttonComponent(url);
 
 const openPopup = () => {
-  xcomp.render({})
-}
+  xcomp.render({});
+};
 
-window.openPopup = openPopup
+window.openPopup = openPopup;

@@ -1,18 +1,16 @@
-import xcomponent from 'xcomponent/dist/xcomponent.js'
+import xcomponent from 'xcomponent/dist/xcomponent.js';
 
-export const iframeComponent = (tag, url) => {
-  return xcomponent.create({
-    tag: tag,
-    url: url
-  })
-}
+export const iframeComponent = (tag, url) =>
+  xcomponent.create({
+    tag,
+    url,
+  });
 
-export const buttonComponent = (url) => {
-  return xcomponent.create({
+export const buttonComponent = url =>
+  xcomponent.create({
     tag: 'button-component',
-    url: url,
+    url,
     contexts: {
-      popup: true
-    }
-  })
-}
+      popup: true,
+    },
+  });

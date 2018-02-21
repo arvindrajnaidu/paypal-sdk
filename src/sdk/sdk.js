@@ -1,5 +1,5 @@
 // import { iframeComponent } from './x-components'
-import foo from './foo'
+import foo from './foo';
 
 // const url = 'http://localhost:3000/iframe.html'
 // const tag = 'iframe-component'
@@ -8,16 +8,16 @@ import foo from './foo'
 // console.log(iframe)
 
 const track = () => {
-  console.log('TRACK')
-}
+  console.log('TRACK');
+};
 
 const saveToLocalStorage = () => {
-  console.log('SAVE-TO-LOCAL-STORAGE')
-}
+  console.log('SAVE-TO-LOCAL-STORAGE');
+};
 
 const setCookie = () => {
-  console.log('SET-COOKIE')
-}
+  console.log('SET-COOKIE');
+};
 
 const pp = {
   foo: {
@@ -30,11 +30,13 @@ const pp = {
           setCookie,
         },
         element,
-      )
-    }
-  }
-}
+      );
+    },
+  },
+};
 
 // window.pp = pp
-const aaaa = document.getElementsByClassName('shoplist')[0]
-if(aaaa) { pp.foo.render({}, aaaa)}
+const aaaa = document.getElementsByClassName('shoplist')[0];
+if (aaaa) {
+  pp.foo.render({}, aaaa);
+}

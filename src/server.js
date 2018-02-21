@@ -125,7 +125,7 @@ app.get('*', async (req, res, next) => {
       <App context={context}>{route.component}</App>,
     );
     data.styles = [{ id: 'css', cssText: [...css].join('') }];
-    data.scripts = [] // [assets.vendor.js];
+    data.scripts = []; // [assets.vendor.js];
     if (route.chunks) {
       data.scripts.push(...route.chunks.map(chunk => assets[chunk].js));
     }

@@ -9,7 +9,7 @@
 
 import React from 'react';
 // import xcomponent from 'xcomponent/dist/xcomponent.js'
-console.log(process.env.NODE_ENV)
+console.log(process.env.NODE_ENV);
 // if(process) {
 //   let xcomponent = require('xcomponent/dist/xcomponent.js')
 //   xcomponent.create({
@@ -18,8 +18,7 @@ console.log(process.env.NODE_ENV)
 //   });
 // }
 class foo extends React.Component {
-  componentDidMount() {
-  }
+  componentDidMount() {}
   render() {
     return (
       <div>

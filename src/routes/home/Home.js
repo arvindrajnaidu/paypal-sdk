@@ -18,9 +18,7 @@ class Home extends React.Component {
       <div className={s.root}>
         <div className={s.container}>
           <h1>PayPal SDK</h1>
-          <div className="shoplist"
-            data-url="{product_url}"
-          ></div>
+          <div className="shoplist" data-url="{product_url}" />
         </div>
       </div>
     );
