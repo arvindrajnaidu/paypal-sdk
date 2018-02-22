@@ -8,12 +8,12 @@
  */
 
 import React from 'react';
-import foo from './foo';
+import Foo from './foo';
 
 function action() {
   return {
     // title: 'foo',
-    component: <foo />,
+    component: <Foo />,
   };
 }
 

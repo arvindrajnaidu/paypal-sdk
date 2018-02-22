@@ -5,7 +5,7 @@ const foo = xcomponent.create({
   url: 'http://localhost:3000/foo',
   prerenderTemplate() {
     const html = document.createElement('html');
-    html.innerHTML = '<body><h1>hi</h1></body>';
+    html.innerHTML = '<body><div style="width:100px" data-reactroot="">foo</div></body>';
     return html;
   },
 });
