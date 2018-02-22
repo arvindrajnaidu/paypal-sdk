@@ -22,8 +22,8 @@ if(typeof(window) === "object"){
 class Foo extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Hello</h1>
+      <div style={{width: 100}}>
+        {'foobar'}
       </div>
     );
   }
