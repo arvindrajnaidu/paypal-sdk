@@ -9,16 +9,17 @@
 
 import React from 'react';
 // import xcomponent from 'xcomponent/dist/xcomponent.js'
-console.log(process.env.NODE_ENV);
-// if(process) {
-//   let xcomponent = require('xcomponent/dist/xcomponent.js')
-//   xcomponent.create({
-//       tag: 'my-login-component',
-//       url: 'http://localhost:3000/foo',
-//   });
-// }
-class foo extends React.Component {
-  componentDidMount() {}
+
+
+if(typeof(window) === "object"){
+  let xcomponent = require('xcomponent/dist/xcomponent.js')
+  xcomponent.create({
+      tag: 'my-login-component',
+      url: 'http://localhost:3000/foo',
+  });
+}
+
+class Foo extends React.Component {
   render() {
     return (
       <div>
@@ -28,4 +29,4 @@ class foo extends React.Component {
   }
 }
 
-export default foo;
+export default Foo;
